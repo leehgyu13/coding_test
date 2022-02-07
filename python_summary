@@ -3,6 +3,12 @@ find
 	str.find(찾을 문자)
 	str.find(찾을 문자, 시작 index)
 	str.find(찾을 문자, 시작, 끝)
+	*리스트에서는 사용 불가
+	
+리스트에서 검색
+	1. if 찾을 요소 in 리스트
+	
+	2. 리스트.index(찾을 요소) 없으면 에러
 
 dictionary
 	a = {}
