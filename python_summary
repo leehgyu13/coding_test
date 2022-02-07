@@ -1,0 +1,60 @@
+python
+find
+	str.find(찾을 문자)
+	str.find(찾을 문자, 시작 index)
+	str.find(찾을 문자, 시작, 끝)
+
+dictionary
+	a = {}
+	추가
+	a = {1: 'a'}
+	a >> {1: 'a'}
+	a[2] = 'b'
+	a >> {1: 'a', 2: 'b'}
+	
+	삭제
+	del a[key]
+	
+	key 리스트
+	a.keys() >> dict_keys([~~])를 리턴 (반환값으로 리스트가 필요하다면 list(a.keys()) 사용
+	
+	value 리스트
+	a.values()
+	
+	key, value 쌍
+	a.items()
+	
+	a.get(key) >> value 반환 없는 key 는 none
+	a.get(key, default) >> none 대신 default
+	
+	조사
+	key in a >> bool return
+	
+list to dic
+	1. dictionary comprehension
+	list = ['a', 'b', 'c']
+	dic = {string : 0 for string in list}
+	>> dic = {'a' : 0, 'b' : 0, 'c' : 0}
+	(dic = {string : i for i, string in enumerate(list)} >> 0 대신 1,2,3)
+	
+	2. dic = dict.fromkeys(key,value) >> value 없으면 none으로
+	value로 리스트를 넣고 싶으면 for 문으로 설정해야됨 [] 넣으면 같은 포인터로 인식
+	
+	3. list 값을 value로 갖는 dic
+	list = ['a', 'b', 'c']
+	dic = {i : list[i] for i in range(len(list))}
+	dic = {0: 'a', 1: 'b', 2: 'c'}
+	
+	4. 두 개의 list
+	string_list = ['a', 'b', 'c']
+	int_list = [1, 2, 3]
+	dic = dict(zip(string_list, int_list))
+	dic = {'a': 1, 'b': 2, 'c': 3}
+	
+	5. tuple list
+	tuple_list = [('a', 1), ('b', 2), ('c', 3)]
+	dic = dict(tuple_list)
+	dic = {'a': 1, 'b': 2, 'c': 3}
+	
+split
+	str.split(sep='구분자', maxsplit=분할횟수)
