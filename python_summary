@@ -7,6 +7,8 @@ find
 	
 리스트
 	answer = [name for name in id_list] 와 같은 방식 기억
+	list.reverse() >> 메모리 내의 배열을 수정 (그래서 리턴은 none)
+	
 리스트에서 검색
 	1. if 찾을 요소 in 리스트
 	
@@ -66,3 +68,14 @@ list to dic
 	
 split
 	str.split(sep='구분자', maxsplit=분할횟수)
+	
+형변환
+	int()
+	float()
+	str()
+	chr()
+	bool()
+	
+몫, 나머지
+	q, r = divmod(피제수, 제수)
+	
