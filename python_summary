@@ -39,6 +39,9 @@ dictionary
 	
 	조사
 	key in a >> bool return
+
+	정렬
+	dic_sorted = sorted(dic.items())
 	
 list to dic
 	1. dictionary comprehension
