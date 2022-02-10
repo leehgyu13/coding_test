@@ -8,6 +8,10 @@ find
 리스트
 	answer = [name for name in id_list] 와 같은 방식 기억
 	list.reverse() >> 메모리 내의 배열을 수정 (그래서 리턴은 none)
+
+	extended slices
+	arr[a:b:c] >> index a부터 index b까지 c 간격으로 배열을 만들어라(a가 none이라면 처음부터, b가 none이라면 할 수 있는데까지, c가 양수라면 마지막 index까지 음수라면 첫 index까지, c가 none이라면 한 칸 간격)
+	
 	
 리스트에서 검색
 	1. if 찾을 요소 in 리스트
