@@ -87,3 +87,11 @@ split
 	q, r = divmod(피제수, 제수)
 	// >> 몫만 나옴
 	
+문자열 치환
+	replace()
+	text.replace("a", "b") // a를 b로 치환(한 번만)
+
+	리스트
+	for item in list1:
+		item_mod = item.replaice("a", "b")
+		list2.append(item_mod)
