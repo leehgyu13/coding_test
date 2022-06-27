@@ -95,3 +95,12 @@ split
 	for item in list1:
 		item_mod = item.replaice("a", "b")
 		list2.append(item_mod)
+
+타입
+	type(var)
+	비교시에는 type('a') 같은 기준을 잡아서 비교
+
+판별
+	var.isalpha() : 스트링이 알파벳인지
+	var.isdigit() : 스트링이 숫자인지
+	var.isalnum() : 스트링이 알파벳 혹은 숫자인지
