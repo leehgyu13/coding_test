@@ -46,6 +46,9 @@ dictionary
 
 	정렬
 	dic_sorted = sorted(dic.items())
+
+	좌표 계산하는데에 쓸 수 있음
+	coor = {key:좌표}
 	
 list to dic
 	1. dictionary comprehension
