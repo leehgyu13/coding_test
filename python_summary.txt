@@ -130,3 +130,8 @@ split
 필터
 	filter(function, iterable val)
 	두 번째 인자에서 첫 번째 인자로 들어온 함수의 값이 참이면 리턴 값에 해당 요소를 포함(function이 참인 요소만 골라줌)
+
+람다
+	lambda 매개변수 : 표현식
+	ex)
+		(lambda x,y : x + y)(10, 20) >>> 30
