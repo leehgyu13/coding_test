@@ -122,3 +122,7 @@ split
 반복
 	from itertools import combinations as cb
 	cb(배열, 3) 배열에서 3개 조합
+
+맵
+	map(function, iterable val)
+	두 번째 인자 자료형을 첫 번째 인자로 들어온 함수에 하나식 집어넣어 함수를 수행
