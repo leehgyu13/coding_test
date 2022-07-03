@@ -135,3 +135,11 @@ split
 	lambda 매개변수 : 표현식
 	ex)
 		(lambda x,y : x + y)(10, 20) >>> 30
+
+누적해서 적용
+	reduce(function, iterable val)
+	ex)
+		reduce(lambda x, y : y + x, 'abcde') >>> 'edcba'
+		a,b => b + a => ba
+		ba, c => c + ba => cba
+		cba, d => d + cba => dcba
