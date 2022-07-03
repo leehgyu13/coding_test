@@ -143,3 +143,13 @@ split
 		a,b => b + a => ba
 		ba, c => c + ba => cba
 		cba, d => d + cba => dcba
+
+ZIP
+	zip("1234", "abcd", "ABCD") => [(1, 'a', 'A'), (2, 'b', 'B'), ...](를 pairs라고하면)
+	numbers, smalls, caps = zip(*pairs) => numbers == (1, 2, 3, 4), smalls == ('a', 'b', 'c', 'd'), caps == ('A', 'B', 'C', 'D')
+
+	사전 변환
+		keys = [1, 2, 3]
+		values = ['a', 'b', 'c']
+		dict(zip(keys, values)) >>> {1:'a', 2:'b', 3:'c'}
+	
