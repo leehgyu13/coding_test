@@ -137,6 +137,7 @@ split
 		(lambda x,y : x + y)(10, 20) >>> 30
 
 누적해서 적용
+	from functools import reduce
 	reduce(function, iterable val)
 	ex)
 		reduce(lambda x, y : y + x, 'abcde') >>> 'edcba'
